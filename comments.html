@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="LuckyCat">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="websystems.css">
+<title>Home page</title>    
+</head>
+<body id="imgbg">
+<h1 id="header">Comments</h1>
+    <nav>
+<div id="toplink">
+    <div class="tpl">
+      <ul class="link">
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="past.html">Past</a></li>    
+        <li><a href="future.html">Future</a></li>  
+          <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </div>
+ </div>   <div id="topbg"></div>
+        </nav>
+ 
+<pre>
+
+</pre>
+
+        <div id="box">
+    <div class="text">
+    <p class="subheader">Technical</p>
+    <p class="subheader2">Structure of Website</p>
+    <p>This Website has four HTML file and one CSS file. See table below</p>
+    <div class="t">   
+        <table>
+            <tr class="thcolor">
+            <th>Filename</th>
+            <th>Title</th>
+            <th>File type</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td>index.html</td>
+            <td>Home</td>
+            <td>HTML file</td>
+            <td>The home page of this website</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>past.html</td>
+            <td>Past</td>
+            <td>HTML file</td>
+            <td>Description of my past</td>
+            </tr>
+            <tr>
+            <td>future.html</td>
+            <td>Future</td>
+            <td>HTML file</td>
+            <td>Description of my future expectation</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>comments.html</td>
+            <td>Comments</td>
+            <td>HTML file</td>
+            <td>Description of how is website was built</td>
+            </tr>
+            <tr>
+            <td>websystem.css</td>
+            <td>None</td>
+            <td>CSS file</td>
+            <td>Controls the layout and style of this website</td>
+            </tr>
+        </table>
+        
+    </div>
+    
+    
+        <p><span class="subheader2">Webpage Structure</span></p>
+        <p>In general, the website is structured by four parts, heading, menu, contents and footer.
+         Each of them are divided by &lt;div&gt; element.</p>  
+        <span class="picb"><img src="images/home.jpg" alt="screenshoot of home webpage"  width="600" height="350"></span>
+        <p>For these four main sections, I created three ids and one class.These containers helps me to change website style more easily through an external CSS file in terms of consistency. Which means, I do not need to change every HTML document when I have new idea about the style.First of all, I used background-color: rgb(248, 248, 245) in CSS file to set background color for all four webpages.HTML elements I used in the body of the HTML file. See table below:</p>
+        <div class="t">   
+        <table>
+            <tr class="thcolor">
+            <th>Element</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td>&lt;p&gt;&lt;/p&gt;</td>
+            <td>Particularlly used for paragraphs, but I also used it for some subheading</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>&lt;div&gt;&lt;/div&gt;</td>
+            <td>This elements is used as a container for HTML elememts. Often I used it for applying classes in the CSS file</td>
+            </tr>
+            <tr>
+            <td>&lt;span&gt;&lt;/span&gt;</td>
+            <td>Similar function to div. but this only used inside div container</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>&lt;img&gt;</td>
+            <td>Used for import images and gives alternative text (alt="") when image is corrupted</td>
+            <tr>
+            <td>&lt;table&gt;&lt;/table&gt;</td>
+            <td>Used together with &lt;th&gt;&lt;/th&gt;,&lt;tr&gt;&lt;/tr&gt;,&lt;td&gt;&lt;/td&gt;, to create table in the website</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>&lt;ul&gt;&lt;/ul&gt; and &lt;ol&gt;&lt;/ol&gt;</td>
+            <td>Used together with &lt;li&gt;&lt;/li&gt; to create ordered or/and unordered list in the website</td>
+            </tr>
+            <tr>
+            <td>&lt;a&gt;&lt;/a&gt;</td>
+            <td>To insert a link</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>&lt;pre&gt;&lt;/pre&gt;</td>
+            <td>Used for preformatted text, but in this website I only used it for the layout not text. The text formation I used class .block</td>
+            </tr>
+            <tr>
+            <td>&lt;h1&gt;&lt;/h1&gt;</td>
+            <td>Used for heading</td>
+            </tr>
+        </table>
+        <p class="subheader2">Header</p>
+            <p>In the header section contains the title of the webpage, in this case &#39;Home&#39;.The title I used &lt;p&gt; &lt;/p&gt;, but in the CSS file I used id(#header) that contains various style elements to adjust it. See table below.</p>
+            <table>
+            <tr class="thcolor">
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td>text-align: center; </td>
+            <td rowspan="3">These properties are used to adjust the position of the header</td>
+            </tr>
+            <tr>
+            <td>margin-top: 80px;</td>
+            </tr>
+            <tr>
+            <td>margin-bottom: 20px;</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>font-style: italic;</td>
+            <td rowspan="4">These properties are used to adjust the font size and style</td>
+            <tr>
+            <td class="tdcolor">font-weight: lighter;</td>
+            </tr>
+            <tr>
+            <td class="tdcolor">font-size: 60px;</td>
+            </tr>
+            
+        </table>
+            <p class="subheader2">Menu</p>
+            <p>In the menu section contains four links which are home, past, future and comments.I used list element for the links which used &lt; a &gt; &lt; /a&gt; and used display: inline-block to make them horizontal. Similarly, this menu section also has an id (#toplink) that contains various style properties to adjust it. See table below.</p>
+            <table>
+            <tr class="thcolor">
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td>font-style: italic; </td>
+            <td rowspan="2">These properties are used to adjust the font size and styler</td>
+            </tr>
+            <tr>
+            <td>font-size: 40px;</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>text-align: center;</td>
+                <td rowspan="2">These properties are used to adjust the position of the text</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>margin: auto;</td>
+            <tr>
+            <td>text-overflow: ellipsis;</td>
+                <td rowspan="2">These properties are used to control the text overflow</td>
+            </tr>
+            <tr>
+            <td>overflow: hidden;</td>
+            </tr>
+            
+        </table>
+            <p class="subheader2">Content</p>
+            <p>In the content section it contains the content of the webpage. I used various elements in this section such as &lt; table &gt; &lt; /table&gt;, &lt; ul &gt; &lt; /ul&gt;, &lt; ol &gt; &lt; /ol&gt;, &lt; p &gt; &lt; /p&gt; &lt; img &gt; and &lt; a &gt; &lt; /a&gt;. In the class .text I used properties: text-align, margin, line-height and font-size to control the layout of the content. 
+            
+            <p class="subheader2">Footer</p>
+            <p>This section contains three parts: text and link, and they are all in the #footer. The link part I uses classes .botlink and .link for the style and the text part is similar to content section. Then only difference is that the footer contains a background image. Since the background color cannot set its position, I uses background-image: linear-gradient to do the color and it can change its position. Properties such as padding, font-size, text-align, line-height, are used for the layout of this part.</p>
+            <p class="subheader2">Hyper links</p>
+            <P>I used "a:" properties such as a:link, a:visited, a:hover and a:active, and text related properties to control the style of the hyper links.</P>
+            <p class="subheader2">Main CSS configuration </p>
+            
+            <table>
+            <tr class="thcolor">
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td>body{}</td>
+                <td>Element</td>
+            <td>Set background color of rgb(248, 248, 245)</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>#header{}</td><td>Id</td>
+            <td>Changes font style to &#39;Times New Roman&#39;with italic and lighter. Adjust the font size to 55px and the position to center.</td>
+            </tr>
+            <tr>
+            <td>#toplink{}</td><td>Id</td>
+            <td>Changes font style with italic and font size to 32px. Controls the text-over flow.</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>#imgbg{}</td><td>Id</td>
+            <td>Import image and adjust its size and position.</td>
+            <tr>
+            <td>#footer{}</td><td>Id</td>
+            <td>Sets up a background and arrange the layout of the text</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>.text{} </td><td>Class</td>
+            <td>To adjust the style of main content text</td>
+            </tr>
+            <tr>
+            <td>.link li{}, .inside{}, .nodot{} and botlink{} </td><td>Class</td>
+            <td>These classes are used to adjust the layout of links.</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>.subheader{} and .subheader2{} </td><td>Class</td>
+            <td>These two classes are used for two different header styles including colour and font size.</td>
+            </tr>
+            <tr>
+            <td>.t table,th,td{} </td><td>Class</td>
+            <td>This is used to add 1px solid black border to the table and adjust table’s position.</td>
+            </tr>
+            <tr class="tdcolor">
+            <td>.tpl</td><td>Class</td>
+            <td>Contains li a{} and ul{}. The purpose of this class its to do the style of menu bar.</td>
+            </tr>
+        </table>
+            
+    </div>
+    <p class="subheader">Aesthetics</p>
+        <p>The website design is followed instructions on <a href="https://www.webstyleguide.com/wsg3/">Webstyleguide</a>.The design philosophy of this website is minimalism.
+        I also contain some Chinese traditional elements (Chinese ink painting) as a logo at bottom of the website. The purpose of that is to give audience something new, as everthing in text might be very boring.
+        The structure of the website mainly is centralized and leave some empty space for both right and left side of the page which inspired by this <a href="https://manuelmoreale.com/">Website</a>.As this webpage contains large proportion of text, this is easier for reader to read.
+</p>
+    <p class="subheader2">Colour</p>
+        <p>The colour of this page is Off-white tone I uses various colours that are close to white, >but not so boring as white to make this webpage looks simple and clean. Even there are some colours are not white, I would still use the low saturation level to make it not so striking.</p><img src="images/colour.jpg" alt="ColourCard" width="400" height="200">
+    <p class="subheader2">Font</p>
+        <p>The font is ranged from 16px to 80px in order to make it bigger enough to the reader. As the background colour is light colour, I used black colours for the font to bring the high contrast.  Moreover, different types of text such as heading, subheading and main text are styled by CSS file. Which means, they have same appearance and the reader will not be surprised, so provide the consistancy.</p>
+<p class="subheader2">Interactivity</p>
+        <p>CSS is used to provide feedback when users visit the website. &#39;a:&#39; is used on links to give feedback to the user such as changing colour and underline the links. Moreover, I have created a menu bar at the footer, so users do not need to scroll up to visit other pages in the site.
+</p>
+    <P class="subheader">Accessibility</P>
+            <p>The font size is set to appropriate size and the high contrast created by black and white ensures the text is readable in various circumstances. Moreover, the line-height is adjusted to avoid all text are hard to read.
+             Text-overflow control is used to ensure the webpage is readable after magnified to a certain extent.The alternitive description of images were added in case when images corrupted. The heading, menu, main content and footer are in the center of the webpage, and the main text is left aligned, so it is easier to read.The webpage is been tested from various browsers and devices such as tablet, laptop and smartphone.
+                
+                
+</p><img src="images/phone.jpg" alt="wesite in phone" width="200" height="400">
+        
+        
+    </div></div>
+    
+    <pre>
+    
+    
+    </pre>
+<div id="footer">      
+<p> Website by  &copy;Luckycat</p>             
+    <p>31628 Web Systems</p>
+<p>University of Technology Sydney</p>
+    <div class="botlink">
+    <ul class="link">
+       <li>| <a href="index.html">Home</a> |</li>  
+       <li><a href="past.html">Past</a> |</li> 
+       <li><a href="future.html">Future</a> |</li> 
+       <li><a href="comments.html">Comments</a> |</li>     
+    </ul> 
+    </div>
+   
+</div>
+        
+</body>
+
+
+</html>

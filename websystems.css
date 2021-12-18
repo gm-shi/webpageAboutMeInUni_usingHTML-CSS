@@ -1,0 +1,138 @@
+.tpl li a{
+    display: block;
+    color: black;
+    padding: 10px 60px;
+    text-decoration: none;
+
+}
+.tpl ul{ 
+    background-image:  linear-gradient(to right,rgb(215,212,211),rgb(215,212,211));
+    margin: auto;
+    list-style-type: none;
+    padding: 1px;
+}
+a:hover:not(.actived) {
+    background-color: grey;
+}
+.actived {
+    background-color: darkgrey; 
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+body{
+    background-color: rgb(248, 248, 245);
+
+}
+#box{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;}
+#header{
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 60px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+}
+#toplink{
+    font-style: italic;
+    font-size: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Times New Roman";
+    margin: auto;
+    }
+
+.link li{
+    display: inline-block;
+  
+} 
+  
+#topbg {
+    background-image: linear-gradient(to right, rgba(220,220,220,0.1), rgba(0,0,0,1), rgba(220,220,220,0.1));
+    padding: 1px;
+    
+    margin-top: 25px;
+    width: 100%;
+    
+}
+
+.text{
+    text-align:left;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    font-family: "Times New Roman";
+    margin: auto;
+}
+.inside{
+    list-style-position: inside;
+}
+.subheader{
+
+    font-size: 28px; 
+    line-height: 1;
+}
+.subheader2{
+    line-height: 1;
+    color: rgb(99,99,99);
+
+}
+.t table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 16px;  
+    text-align: left;
+    padding: 1px;
+
+
+}
+
+.thcolor{
+background-color: rgba(165,222,228,0.8); }
+.tdcolor{
+background-color: rgba(165,222,228,0.3); }
+.picb{
+    border: 1px;
+    border-bottom-style: double;
+}
+#imgbg{
+    background-image: url(images/timg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 150px 100px;
+}
+.block {
+    display:block;
+}
+#footer{
+    background-image: linear-gradient(to right, rgba(179,179,179,0), rgba(179,179,179,1), rgba(179,179,179,0));
+    padding-bottom: 1px;
+    padding-top: 1px;
+    font-size:  1em;
+    line-height: 1px;
+    text-align: center;
+
+}
+.botlink{
+    font-size: 14px;
+    text-align-last: right;
+    line-height: 1;   
+    list-style-type: none;
+    
+
+
+}
+.nodot{
+    list-style-type: none;
+}
